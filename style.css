@@ -18,7 +18,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     min-height: 100vh;
     margin: 0;
@@ -27,16 +26,14 @@ body {
     flex-direction: column;
     justify-content: space-between;
 
-    /* Terminal style */
+    /* terminal style */
     background-color: rgb(40, 40, 40);
     background-image: radial-gradient(rgba(134, 126, 2, 0.75), black 120%);
     background-attachment: fixed;
     height: 100vh;
-
     text-shadow: 0 0 5px #c8c8c8;
-
     color: white;
-    font: 1.3rem Inconsolata, monospace;
+    font: 1.3rem terminus;
 }
 
 ul {
@@ -53,7 +50,7 @@ a:hover {
     color: black;
 }
 
-/* selection color tweaks*/
+/* selection color tweaks */
 ::-moz-selection {
     color: black;
     background: white;
@@ -72,7 +69,7 @@ a:hover {
 
 .section {
     width: 70%;
-    font-family: Terminus;
+    font-family: terminus;
     font-weight: normal;
 }
 
