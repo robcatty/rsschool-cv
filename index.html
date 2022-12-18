@@ -1,11 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/img/favicon.ico" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/default.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
+
 <body>
+    <header class="header">
+        <div class="container">
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="#contacts">| Contacts |</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">| About |</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">| Skills |</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#code">| Code |</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">| Experience |</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">| Education |</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#language">| Language |</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="section profile" id="profile">
+                <img class="frame" src="assets/img/user_portrait.png" alt="user portrait">
+                <h1 class="section-title">Mikhail Kornienko</h1>
+            </section>
+            <section class="section" id="contacts">
+                <h2 class="section-title">Contact Information</h2>
+                <ul>
+                    <li>Location: <a href="">Republic of Kazakhstan</a></li>
+                    <li>Email: <a href="mailto:robcatty@proton.me">robcatty@proton.me</a></li>
+                    <li>GitHub: <a href="https://github.com/robcatty">robcatty</a></li>
+                    <li>Discord: <a href="">'Mikhail Kornienko (@robcatty)'</a></li>
+                </ul>
+            </section>
+            <section class="section" id="about">
+                <h2 class="section-title">About Me</h2>
+                <p>
+                    I am a technical hobbyist, GNU+Linux user, and Free Software
+                    enthusiast currently working as a system administrator at a small
+                    trade company.
+                </p>
+
+                <p>
+                    By participating in courses at Rolling Scopes School, I am going to
+                    systematize the knowledge I already have, close gaps in it, and
+                    learn new things not directly associated with my current job.
+                </p>
+
+                <p>
+                    I chose front-end development courses to gain knowledge and
+                    understanding regarding a part of technology that permeates all
+                    aspects of modern life.
+                </p>
+                <p>
+                    I am interested in the information security aspects of the Web and
+                    web applications, so I think learning in detail how they work and
+                    how they are developed is a good way to understand how to protect
+                    users and design secure software.
+                </p>
+            </section>
+            <section class="section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul>
+                    <li>
+                        advanced user of Unix-like operating systems, have experience with
+                        variety of GNU+Linux and BSD distributions
+                    </li>
+                    <li>
+                        have experience with the following programming languages:
+                        <ul>
+                            <li>Bash</li>
+                            <li>C</li>
+                            <li>GDScript (Godot game engine)</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                        </ul>
+                    </li>
+                    <li>
+                        have prior experience with the deployment and maintenance of web
+                        applications such as Nextcloud and Psono (a password manager);
+                        understand the basic components involved
+                    </li>
+                    <li>
+                        technical support abilities (user communication, conflict
+                        resolution, problem solving)
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="code">
+                <h2 class="section-title">Code Examples</h2>
+                <p>Completed exercises from Codewars (JavaScript):</p>
+                <ul>
+                    <li><a href="https://www.codewars.com/kata/5601409514fc93442500010b">"How good are you really?"</a>
+                        <pre><code class="language-javascript code-block">
+function betterThanAverage(classPoints, yourPoints) {
+
+    classPoints.push(yourPoints);
+                            
+    let averagePoints = classPoints.reduce(
+        (accum, curr) => accum + curr
+    ) / classPoints.length;
+                            
+    if (averagePoints < yourPoints) {
+        return true;
+    }
+                            
+    return false;
+                          
+}
+                        </code></pre>
+                    </li>
+                    <li><a href="https://www.codewars.com/kata/5513795bd3fafb56c200049e">"Count by X"</a>
+                        <pre><code class="language-javascript code-block">
+function countBy(x, n) {
+    let z = [];
+                              
+    for (let i = 1; z.length < n; i++) {
+        if (i % x === 0) {
+            z.push(i);
+        }
+    }
+                              
+    return z;
+}
+                        </code></pre>
+                    </li>
+                    <li><a href="https://www.codewars.com/kata/54edbc7200b811e956000556">"Counting sheep..."</a>
+                        <pre><code class="language-javascript code-block">
+function countSheeps(arrayOfSheep) {
+    let count = 0;
+
+    for (let i = 0; i < arrayOfSheep.length; i++) {
+        if (arrayOfSheep[i] === true) {
+            count++;
+        }
+    }
+
+    return count;
+}
+                        </code></pre>
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="experience">
+                <h2 class="section-title">Experience</h2>
+                <p>I have worked as a system administrator for a small, non-uniform site (around 100+ users, servers
+                    running Unix-like operating systems, Windows workstations, and virtual machines).</p>
+            </section>
+            <section class="section" id="education">
+                <h2 class="section-title">Education</h2>
+                <p>I am largely an autodidact, usually quickly learning parts of fields in which I have some practical
+                    tasks to accomplish.</p>
+                <p>I have completed following basic courses recently:</p>
+                <ul>
+                    <li><a href="https://stepik.org/course/73618">"Программирование на C и выполнение программ"</a></li>
+                    <li><a href="https://stepik.org/course/84164">"Intro to Programming in Python"</a></li>
+                    <li><a href="https://www.codecademy.com/courses/introduction-to-javascript">"Learn JavaScript"</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="language">
+                <h2 class="section-title">English Language Level</h2>
+                <p>My proficiency level estimate is A2.</p>
+                <ul>
+                    <li>I can read and understand technical documentation in English freely</li>
+                    <li>I can quickly search for solutions to problems across resources in English on the internet</li>
+                    <li>I am watching technical lectures in English without subtitles on a daily basis</li>
+                </ul>
+                <p>Currently, I am in the process of refining my writing and speaking skills and taking courses to close
+                    knowledge gaps and improve my proficiency level.</p>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <a href="https://github.com/robcatty"><img src="assets/img/github-mark-white.svg"
+                    alt="GitHub mark icon"></a>
+            <a href="https://rs.school/js/"><img style="height: 10%; width: 10%;" class="frame"
+                    src="assets/img/rs_school_js.svg" alt="Rolling Scopes School logo with JS label"></a>
+            <p>2022</p>
+        </div>
+    </footer>
 </body>
+
 </html>

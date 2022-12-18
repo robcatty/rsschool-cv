@@ -1,3 +1,118 @@
-title {
-    color: red;
+/* custom fonts */
+@font-face {
+    font-family: vt323;
+    src: url("assets/fonts/vt323/VT323-Regular.ttf");
+}
+
+@font-face {
+    font-family: terminus;
+    src: url("assets/fonts/terminus/TerminusTTF-4.49.2.ttf");
+}
+
+/* general tweaks */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* terminal style */
+    background-color: rgb(40, 40, 40);
+    background-image: radial-gradient(rgba(134, 126, 2, 0.75), black 120%);
+    background-attachment: fixed;
+    height: 100vh;
+    text-shadow: 0 0 5px #c8c8c8;
+    color: white;
+    font: 1.3rem terminus;
+}
+
+ul {
+    list-style-type: '- '
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* selection color tweaks */
+::-moz-selection {
+    color: black;
+    background: white;
+}
+
+::selection {
+    color: black;
+    background: white;
+}
+
+/* main classes */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.section {
+    width: 70%;
+    font-family: terminus;
+    font-weight: normal;
+}
+
+.section-title {
+    font-family: vt323;
+    font-weight: normal;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-link {
+    font-family: vt323;
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+    line-height: 50px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    background-color: white;
+    color: black;
+    padding: 0 20px;
+    line-height: 50px;
+    transition: 0.3s;
+}
+
+.profile>* {
+    display: inline;
+}
+
+.frame {
+    border: 3px solid #ccc;
+    background: #eee;
+    margin: auto;
+}
+
+.code-block {
+    font-family: terminus;
+    font-size: small;
 }
