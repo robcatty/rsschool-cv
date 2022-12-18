@@ -1,11 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/img/favicon.ico" />
 </head>
+
 <body>
+    <header class="header">
+        <div class="container">
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="#contacts">| Contacts |</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">| About |</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">| Skills |</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#code">| Code |</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">| Experience |</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">| Education |</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#language">| Language |</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="section profile" id="profile">
+                <img class="frame" src="assets/img/user_portrait.png" alt="user portrait">
+                <h1 class="section-title">Mikhail Kornienko</h1>
+            </section>
+            <section class="section" id="contacts">
+                <h2 class="section-title">Contact Information</h2>
+                <ul>
+                    <li>Location: <a href="">Republic of Kazakhstan</a></li>
+                    <li>Email:<a href="mailto:robcatty@proton.me">robcatty@proton.me</a></li>
+                    <li>GitHub:<a href="https://github.com/robcatty">robcatty</a></li>
+                    <li>Discord:<a href=""></a>'Mikhail Kornienko (@robcatty)'</li>
+                </ul>
+            </section>
+            <section class="section" id="about">
+                <h2 class="section-title">About Me</h2>
+                <p>
+                    I am a technical hobbyist, GNU+Linux user, and Free Software
+                    enthusiast currently working as a system administrator at a small
+                    trade company.
+                </p>
+
+                <p>
+                    By participating in courses at Rolling Scopes School, I am going to
+                    systematize the knowledge I already have, close gaps in it, and
+                    learn new things not directly associated with my current job.
+                </p>
+
+                <p>
+                    I chose front-end development courses to gain knowledge and
+                    understanding regarding a part of technology that permeates all
+                    aspects of modern life.
+                </p>
+                <p>
+                    I am interested in the information security aspects of the Web and
+                    web applications, so I think learning in detail how they work and
+                    how they are developed is a good way to understand how to protect
+                    users and design secure software.
+                </p>
+            </section>
+            <section class="section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul>
+                    <li>
+                        advanced user of Unix-like operating systems, have experience with
+                        variety of GNU+Linux and BSD distributions
+                    </li>
+                    <li>
+                        have experience with the following programming languages:
+                        <ul>
+                            <li>Bash</li>
+                            <li>C</li>
+                            <li>GDScript (Godot game engine)</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                        </ul>
+                    </li>
+                    <li>
+                        have prior experience with the deployment and maintenance of web
+                        applications such as Nextcloud and Psono (a password manager);
+                        understand the basic components involved
+                    </li>
+                    <li>
+                        technical support abilities (user communication, conflict
+                        resolution, problem solving)
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="code">
+                <h2 class="section-title">Code Examples</h2>
+                <p>Completed exercises from Codewars (JavaScript):</p>
+                <pre>
+            function betterThanAverage(classPoints, yourPoints) {
+
+            classPoints.push(yourPoints);
+            
+            let averagePoints = classPoints.reduce(
+              (accum, curr) => accum + curr
+            ) / classPoints.length;
+            
+            if (averagePoints < yourPoints) {
+              return true;
+            }
+            
+            return false;
+          
+          }
+         </pre>
+            </section>
+            <section class="section" id="experience">
+                <h2 class="section-title">Experience</h2>
+            </section>
+            <section class="section" id="education">
+                <h2 class="section-title">Education</h2>
+            </section>
+            <section class="section" id="language">
+                <h2 class="section-title">English Language Level</h2>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>FOOTER</p>
+        </div>
+    </footer>
 </body>
+
 </html>
